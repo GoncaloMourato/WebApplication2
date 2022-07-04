@@ -1,0 +1,41 @@
+﻿@model WebApplication2.Models.Aluno
+@{
+    Layout = null;
+}
+<!DOCKTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Aluno Guardado</title>
+    </head>
+    <body>
+         <fieldset>
+            <legend>Aluno Guardado</legend>
+            <div>
+                <label for="AlunoId">Id</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.AlunoId" id="AlunoId" name="AlunoId"/>
+            </div>
+            <div>
+                <label for="Nome">Nome</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.NomeCompleto" id="NomeCompleto" name="NomeCompleto"/>
+            </div>
+           @* <div>
+                <label for="Apelido">Apelido</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Apelido" id="Apelido" name="Apelido"/>
+            </div>*@
+                        <div>
+                <label for="Telefone">Telefone</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Telefone" id="Telefone" name="Telefone"/>
+            </div>
+        </fieldset>
+    </body>
+</html>

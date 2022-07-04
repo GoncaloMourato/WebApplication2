@@ -1,0 +1,49 @@
+﻿@model WebApplication2.Models.Aluno
+
+@{
+    Layout = null;
+}
+<!DOCKTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Detalhe</title>
+    </head>
+    <body>
+        <form action="/Aluno/GuardarAluno" method="post">
+        <fieldset>
+            <legend>Alunos</legend>
+            <b>@ViewBag.Nome</b>
+            <b>@ViewData["Apelido"]</b>
+            <div>
+                <label for="AlunoId">Id</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.AlunoId" id="AlunoId" name="AlunoId"/>
+            </div>
+            <div>
+                <label for="Nome">Nome</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Nome" id="Nome" name="Nome"/>
+            </div>
+            <div>
+                <label for="Apelido">Apelido</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Apelido" id="Apelido" name="Apelido"/>
+            </div>
+                        <div>
+                <label for="Telefone">Telefone</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Telefone" id="Telefone" name="Telefone"/>
+            </div>
+            <p>
+                <input type="submit" value="Enviar"/>
+            </p>
+        </fieldset>
+        </form>
+    </body>
+</html>
